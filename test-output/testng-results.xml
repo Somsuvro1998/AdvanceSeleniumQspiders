@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-06T19:27:56 IST" name="Suite" finished-at="2023-12-06T19:27:56 IST" duration-ms="55">
+    <groups>
+    </groups>
+    <test started-at="2023-12-06T19:27:56 IST" name="Test" finished-at="2023-12-06T19:27:56 IST" duration-ms="55">
+      <class name="Practice.ThreeMethods1">
+        <test-method signature="me1()[pri:0, instance:Practice.ThreeMethods1@45752059]" started-at="2023-12-06T19:27:56 IST" name="me1" finished-at="2023-12-06T19:27:56 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- me1 -->
+        <test-method signature="me2()[pri:0, instance:Practice.ThreeMethods1@45752059]" started-at="2023-12-06T19:27:56 IST" name="me2" finished-at="2023-12-06T19:27:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- me2 -->
+        <test-method signature="me3()[pri:0, instance:Practice.ThreeMethods1@45752059]" started-at="2023-12-06T19:27:56 IST" name="me3" finished-at="2023-12-06T19:27:56 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- me3 -->
+      </class> <!-- Practice.ThreeMethods1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
