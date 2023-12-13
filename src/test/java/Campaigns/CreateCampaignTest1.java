@@ -28,10 +28,11 @@ import POMRepo.HomePage;
 import POMRepo.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Listeners(Generic_utilities.ListenerImplementation.class)
+@Listeners(Generic_utilities.ExtentImplementation.class)
 public class CreateCampaignTest1 extends BaseClass {
 
-	@Test(groups="RegressionTest")	
+	//@Test(retryAnalyzer=Generic_utilities.RetryImplementation.class)	
+	@Test
 	public void createCampaignTest1() throws Throwable {
 		//WebDriverManager.edgedriver().setup();
 		//WebDriver driver;
@@ -105,14 +106,14 @@ public class CreateCampaignTest1 extends BaseClass {
 	
 		Thread.sleep(2000);
 		
-		CampValidationPage validate=new CampValidationPage(driver);
+		//CampValidationPage validate=new CampValidationPage(driver);
 		
 		
-		String actData=validate.campValidate();
+		//String actData=validate.campValidate();
 	
-//		SoftAssert soft=new SoftAssert();
-//		soft.assertEquals(actData,CampaignName);
-//		soft.assertAll();
+		//SoftAssert soft=new SoftAssert();
+		//soft.assertEquals(actData,CampaignName);
+		//soft.assertAll();
 		
 		//Assert.assertEquals(actData,CampaignName);
 		
