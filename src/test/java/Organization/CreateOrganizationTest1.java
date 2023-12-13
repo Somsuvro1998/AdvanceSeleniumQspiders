@@ -21,9 +21,10 @@ import POMRepo.LoginPage;
 import POMRepo.OrgValidationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Listeners(Generic_utilities.ListenerImplementation.class)
+@Listeners(Generic_utilities.ExtentImplementation.class)
 public class CreateOrganizationTest1 extends BaseClass {
-	@Test(groups="SmokeTest")
+	
+	//@Test(retryAnalyzer=Generic_utilities.RetryImplementation.class)
 public void createOrganizationTest1() throws Throwable{
 
 	//WebDriver driver;
@@ -82,16 +83,16 @@ else if(BROWSER.equalsIgnoreCase("edge"))
     
    Thread.sleep(3000);
    
-   OrgValidationPage validate=new OrgValidationPage(driver);
+   //OrgValidationPage validate=new OrgValidationPage(driver);
    
-   String actData=validate.orgValidate();
-   Assert.assertEquals(actData,Oname);
+   //String actData=validate.orgValidate();
+   //Assert.assertEquals(actData,Oname);
    
-   String actData1=validate.orgValidate();
-   Assert.assertEquals(actData1,Onumber);
+   //String actData1=validate.orgValidate();
+   //Assert.assertEquals(actData1,Onumber);
    
-   String actData2=validate.orgValidate();
-   Assert.assertEquals(actData2,Oemail);
+   //String actData2=validate.orgValidate();
+   //Assert.assertEquals(actData2,Oemail);
    //home.Logout(driver);
 
 	

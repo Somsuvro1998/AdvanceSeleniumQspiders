@@ -1,12 +1,17 @@
 package Generic_utilities;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -202,7 +207,16 @@ public class Webdriver_Utility {
 	}
 	
 	
-	
+	public static String takeScreenShot(WebDriver driver, String screenShotName) throws Throwable
+	{
+		TakesScreenshot takesScreenShot=(TakesScreenshot)driver;
+		File src=takesScreenShot.getScreenshotAs(OutputType.FILE);
+		File dst=new File("./ScreenShots/" +screenShotName+ ".png");
+		FileUtils.copyFile(src, dst);
+		
+		return dst.getAbsolutePath();
+		
+	}
 	
 	
 	

@@ -9,7 +9,7 @@ import Generic_utilities.ListenerImplementation;
 @Listeners(Generic_utilities.ListenerImplementation.class)
 public class ThreeMethods1 {
      
-	//public ListenerImplementation i=new ListenerImplementation();
+	
 
 	@Test
 	public void me1(){
@@ -26,13 +26,15 @@ public class ThreeMethods1 {
 		System.out.println("Ciao");
 	}
 	@Test
-	public void me3()
+	public void me3() throws Throwable
 	{
-		System.out.println("Namaskar");
-		Assert.assertEquals(false,true);
+		System.out.println("Namaskar");	
+	    Assert.assertEquals(false,true);	
 		System.out.println("Namaste");
-		Assert.assertEquals(false,true);
-		//i.onTestFailure(null);
+		
+		//Screenshot will not be taken as there is no Browser Launching
+		
+		
 			
 	}
 }

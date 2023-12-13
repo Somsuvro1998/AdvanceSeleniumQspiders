@@ -9,8 +9,8 @@
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="createCampaignTest"/>
           <include name="afterSuite"/>
+          <include name="createCampaignTest1"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
